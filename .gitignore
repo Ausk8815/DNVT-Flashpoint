@@ -1,0 +1,54 @@
+# Build artifacts
+build/
+*.exe
+*.o
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Debug/test output
+*.raw
+dll_debug_raw.pcm
+speaker_test.wav
+roundtrip_test.wav
+cap_*.wav
+
+# Archives
+*.7z
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# Pico SDK (large, fetched by submodule)
+Reference/dnvt-fw-master/build/
+Reference/dnvt-fw-master/pico-sdk/
+
+# Credentials / config with secrets
+sip_extensions.ini
+
+# OS
+.DS_Store
+Thumbs.db
+
+# DLL runtime deps (user provides via Zadig/MinGW)
+libusb-1.0.dll
+libwinpthread-1.dll
+
+# Built DLL (user compiles from dnvt_bridge/ source)
+dnvt_bridge.dll
+
+# Temp build files
+encode_tone.cpp
+test_roundtrip.cpp
+
+# Test recordings
+sip_call_tx.wav
+*.pcm
+
+# fw_push workspace
+Reference/fw_push/

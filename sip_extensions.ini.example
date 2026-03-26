@@ -1,0 +1,23 @@
+[general]
+dial_timeout = 4
+dial_terminator = #
+default_route = sip
+
+[line1]
+enabled = true
+sip_server = your.pbx.ip
+sip_port = 5060
+transport = udp
+username = your_extension
+password = your_password
+display_name = DNVT_Line1
+extension = your_extension
+
+[line2]
+enabled = false
+
+[line3]
+enabled = false
+
+[line4]
+enabled = false
